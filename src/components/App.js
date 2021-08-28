@@ -1,10 +1,8 @@
 import { RegisteredContextProvider } from "../contexts/registeredContext";
-import Home from "./Home";
+import { Home } from "./Home";
 
-export default function App() {
-  return (
-    <RegisteredContextProvider>
-      <Home />
-    </RegisteredContextProvider>
-  );
-}
+export const App = () => (
+  <RegisteredContextProvider>
+    <Home />
+  </RegisteredContextProvider>
+);
